@@ -230,6 +230,6 @@ ORDER BY year_released;
 
 SELECT movies.title, actors.actor_name, characters.character_name
 FROM characters 
-JOIN actors ON actor_id = actor_id
-JOIN movies ON movie_id = movie_id
+JOIN actors ON characters.actor_id = actors.id
+JOIN movies ON characters.movie_id = movies.id
 ORDER BY year_released;
