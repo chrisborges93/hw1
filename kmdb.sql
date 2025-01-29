@@ -167,6 +167,22 @@ CREATE TABLE characters (
     actor_id INTEGER,
     movie_id INTEGER);
 
+INSERT INTO actors (actor_name
+
+)
+VALUES 
+    ("Christian Bale"),
+    ("Michael Caine"),
+    ("Liam Neeson"),
+    ("Katie Holmes"),
+    ("Gary Oldman"),
+    ("Heath Ledger"),
+    ("Aaron Eckhart"),
+    ("Maggie Gyllenhaal"),
+    ("Tom Hardy"),
+    ("Joseph Gordon-Levitt"),
+    ("Anne Hathaway");
+
 INSERT INTO movies (
     title,
     year_released,
@@ -183,4 +199,3 @@ studio_name
 ) 
 VALUES 
 ("Warner Bros.”);
-
