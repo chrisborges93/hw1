@@ -221,3 +221,15 @@ VALUES
     ("Bane", 9, 3),
     ("John Blake", 10, 3),
     ("Selina Kyle", 11, 3);
+
+SELECT title, year_released, mpaa_rating, studios.studio_name
+FROM movies
+JOIN studios
+GROUP BY year_released
+ORDER BY year_released;
+
+SELECT movies.title, actors.actor_name, characters.character_name
+FROM characters 
+JOIN actors ON actor_id = actor_id
+JOIN movies ON movie_id = movie_id
+ORDER BY year_released;
